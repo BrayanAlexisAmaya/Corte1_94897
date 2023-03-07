@@ -5,6 +5,14 @@ while i <= N:
     if i%2 != 0:
         print(f"{i}, ", end="");
     i += 1;
+    
+N = int(input("Ingrese un numero entero para sacar el factorial: "));
+i = 1;
+Ns = N;
+while Ns > 1:
+    i *= Ns;
+    Ns -= 1;
+print(f"El factorial de {N} es: {i}");
 
 N = int(input("Ingrese un numero entero: "));
 i = 2;
